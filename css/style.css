@@ -16,6 +16,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--primario);
+    min-height: 100vh;
+}
+
 .style-nav {
     background-color: var(--secundario);
 }
@@ -24,12 +29,26 @@
     color: var(--blanco);
 }
 
-.padd-nav{
+.padd-nav {
     margin-left: 1.8rem;
 }
 
+.padd-nav_one {
+    margin-left: 15rem;
+}
+
+@media (max-width: 850px) {
+    .padd-nav {
+        margin-left: 0;
+    }
+
+    .padd-nav_one {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 900px) {
-    .padd-nav{
+    .padd-nav {
         margin-left: 0;
     }
 }
@@ -46,17 +65,17 @@
     height: 35rem;
 }
 
-.position_home{
+.position_home {
     display: flex;
 }
 
-.style-sec_home{
+.style-sec_home {
     margin-left: 10rem;
     margin-top: 10rem;
 }
 
 @media (max-width: 500px) {
-    .style-sec_home{
+    .style-sec_home {
         margin-left: 2rem;
         margin-top: 10rem;
     }
@@ -112,4 +131,70 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--texto);
+}
+
+.style-cards_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.style-card_title {
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+.card_style-border {
+    background-color: hsla(0, 0%, 100%, 0.40);
+    box-shadow: 2px 4px 8px 0px #2F2B2B3D;
+}
+
+.cuadro-home {
+    width: 1200px;
+    height: 480px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.style-cuadro_home {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.7rem;
+}
+
+.style-cuadro_title {
+    font-family: var(--fuentePrincipal);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.style-cuadro_button {
+    width: 200px;
+    height: 56px;
+    top: 3435px;
+    left: 624px;
+    border-radius: 30px;
+    border: 1px solid var(--texto);
+    background: transparent;
+    font-family: var(--fuenteSecundaria);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: var(--secundario);
+}
+
+.bg-foot{
+    background-image: url(../img/Ellipse\ 4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
