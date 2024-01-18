@@ -1,0 +1,115 @@
+:root {
+    --primario: #AE887B;
+    --secundario: #3A4E4F;
+    --texto: #1D1B1B;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+
+    --fuentePrincipal: 'Raleway', sans-serif;
+    --fuenteSecundaria: 'Roboto', sans-serif;
+    --fuenteTerciaria: 'Lily Script One', system-ui;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.style-nav {
+    background-color: var(--secundario);
+}
+
+.color-blanco {
+    color: var(--blanco);
+}
+
+.padd-nav{
+    margin-left: 1.8rem;
+}
+
+@media (max-width: 900px) {
+    .padd-nav{
+        margin-left: 0;
+    }
+}
+
+.style-img_home {
+    max-width: 100%;
+}
+
+.bg-img_home {
+    background-image: url(../img/novia\ ramo\ foto\ hermosa\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 35rem;
+}
+
+.position_home{
+    display: flex;
+}
+
+.style-sec_home{
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+@media (max-width: 500px) {
+    .style-sec_home{
+        margin-left: 2rem;
+        margin-top: 10rem;
+    }
+}
+
+.margin__home {
+    margin-top: 15rem;
+}
+
+.style-title_home {
+    font-family: var(--fuenteTerciaria);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: var(--blanco);
+}
+
+.style-parrafo_home {
+    font-family: var(--fuenteTerciaria);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--blanco);
+}
+
+.style-button_home {
+    font-family: var(--fuenteSecundaria);
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    width: 115.88px;
+    height: 37.08px;
+    top: 222.49px;
+    left: 120.52px;
+    border-radius: 18.54px;
+    background-color: var(--texto);
+    color: var(--blanco);
+    box-shadow: -2.3176352977752686px -2.3176352977752686px 2.3176352977752686px 0px #AE887B80;
+    box-shadow: 2.3176352977752686px 1.1588176488876343px 9.270541191101074px 0px #FFFFFF;
+}
+
+.style-p_main {
+    font-family: var(--fuentePrincipal);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--texto);
+}
