@@ -19,6 +19,7 @@
 body {
     background-color: var(--primario);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .style-nav {
@@ -166,6 +167,18 @@ body {
     padding-top: 1.7rem;
 }
 
+@media (max-width: 1050px) {
+    .section_home{
+        display: none;
+    }
+}
+
+@media (min-width: 1050px) {
+    .section_home2{
+        display: none;
+    }
+}
+
 .style-cuadro_title {
     font-family: var(--fuentePrincipal);
     font-size: 18px;
@@ -190,11 +203,4 @@ body {
 
 footer{
     background-color: var(--secundario);
-}
-
-.bg-foot{
-    background-image: url(../img/Ellipse\ 4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
