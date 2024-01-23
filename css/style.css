@@ -256,6 +256,46 @@ footer {
     border-radius: 30px;
 }
 
+@media (max-width: 1000px) {
+    .lay {
+        width: 500px;
+        height: 600px;
+        border-radius: 30px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .lay{
+        width: 350px;
+        height: 500px;
+        border-radius: 30px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .style-contact_map{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .style-map{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .style-map{
+        width: 300px;
+        height: 250px;
+    }
+}
 .style-icon_contact{
     text-decoration: none;
     font-family: var(--fuentePrincipal);
@@ -266,6 +306,13 @@ footer {
 }
 .lay2{
     text-align: start;
+}
+
+@media (max-width: 1000px) {
+    .lay2{
+        margin-top: 3rem;
+        text-align: center;
+    }
 }
 
 .style-button_contact{
