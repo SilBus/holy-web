@@ -1,5 +1,5 @@
 :root {
-    --primario: rgb(174, 136, 123);
+    --primario: #ae887b;
     --secundario: #3A4E4F;
     --texto: #1D1B1B;
     --blanco: #FFFFFF;
@@ -158,7 +158,10 @@ body {
 }
 
 .card_style-border {
-    background-color: hsla(0, 0%, 100%, 0.40);
+    background-image: url(../img/glass\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     box-shadow: 2px 4px 8px 0px #2F2B2B3D;
 }
 
@@ -241,7 +244,10 @@ footer {
 }
 
 .glass-effect {
-    background: rgba(255, 255, 255, 0.322);
+    background-image: url(../img/glass\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem)
 }
@@ -268,7 +274,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .lay{
+    .lay {
         width: 350px;
         height: 500px;
         border-radius: 30px;
@@ -279,24 +285,25 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    .style-contact_map{
+    .style-contact_map {
         margin-top: 3rem;
     }
 }
 
 @media (max-width: 1000px) {
-    .style-map{
+    .style-map {
         margin-top: 3rem;
     }
 }
 
 @media (max-width: 500px) {
-    .style-map{
+    .style-map {
         width: 300px;
         height: 250px;
     }
 }
-.style-icon_contact{
+
+.style-icon_contact {
     text-decoration: none;
     font-family: var(--fuentePrincipal);
     font-weight: 400;
@@ -304,18 +311,19 @@ footer {
     color: var(--negro);
     text-align: start;
 }
-.lay2{
+
+.lay2 {
     text-align: start;
 }
 
 @media (max-width: 1000px) {
-    .lay2{
+    .lay2 {
         margin-top: 3rem;
         text-align: center;
     }
 }
 
-.style-button_contact{
+.style-button_contact {
     text-align: center;
     background-color: var(--texto);
     height: 50px;
@@ -326,7 +334,7 @@ footer {
     box-shadow: 2.3176352977752686px 1.1588176488876343px 9.270541191101074px 0px #FFFFFF;
 }
 
-.style-button_form{
+.style-button_form {
     background-color: var(--texto);
     color: var(--blanco);
     font-family: var(--fuenteSecundaria);
@@ -334,4 +342,97 @@ footer {
     font-size: 15px;
     line-height: 23.44px;
     border-radius: 30px;
+}
+
+/*BLOG*/
+
+.bg-img_blog {
+    background: linear-gradient(#2f2b2b18, #2f2b2b93), url(../bg-blog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 35rem;
+}
+
+@media (max-width: 500px) {
+    .style-card_blog{
+        margin-top: 3rem;
+    }
+}
+
+.style-blog_tx {
+    text-decoration: none;
+    color: #363636;
+    font-family: var(--fuenteSecundaria);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.style-blog_tx1 {
+    font-family: var(--fuenteSecundaria);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #363636;
+}
+
+.style-blog_tx2 {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--texto);
+}
+
+.style-blog_tx3 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #75464A;
+}
+
+@media (max-width: 1000px) {
+    .mq-blog {
+        display: block;
+        width: 350px;
+    }
+}
+
+.style-blog_pie {
+    background-image: url(../img/bg-blogdown.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.style-blog_inp1 {
+    width: 350px;
+    height: 50px;
+}
+
+.style-blog_inp2 {
+    border: 4px solid #FFFFFF;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background: transparent;
+}
+
+.style-blog_inp3 {
+    font-family: var(--fuentePrincipal);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: var(--texto);
 }
